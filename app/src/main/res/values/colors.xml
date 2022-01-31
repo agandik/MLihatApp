@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tfe_color_primary">#ffa800</color>
+    <color name="tfe_color_primary_dark">#ff6f00</color>
+    <color name="tfe_color_accent">#425066</color>
+
+    <!--colors for profile-->
+    <color name="profileBackground">#fff</color>
+    <color name="blackTextColor">#000</color>
+</resources>

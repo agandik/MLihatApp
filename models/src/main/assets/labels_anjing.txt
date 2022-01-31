@@ -1,0 +1,6 @@
+akita
+Alaskan Malamute
+beagle
+cihuahua
+golden retriever
+pomeranian

@@ -1,0 +1,97 @@
+<resources>
+    <string name="tfe_ic_app_name" translation_description="Image Classification demo app [CHAR_LIMIT=40]">MLihat Android Detection APP</string>
+    <string name="tfe_ic_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+    <string name="tfe_ic_gpu_quant_error" translation_description="Error regarding GPU support for Quant models[CHAR_LIMIT=60]">GPU does not yet supported quantized models.</string>
+    <string name="tfe_ic_model" translatable="false">Jenis :</string>
+    <string name="tfe_ic_language" translatable="false">Bahasa Pencarian :</string>
+    <string-array name="tfe_ic_models" translatable="false">
+        <item>Anjing</item>
+        <item>Kucing</item>
+        <item>Burung</item>
+    </string-array>
+    <string-array name="tfe_ic_models1" translatable="false">
+        <item>bunga</item>
+    </string-array>
+    <string-array name="tfe_ic_language" translatable="false">
+        <item>Indonesia</item>
+        <item>Inggris</item>
+        <item>Latin</item>
+    </string-array>
+    <string name="tfe_ic_device" translatable="false">Device:</string>
+    <string-array name="tfe_ic_devices" translatable="false">
+        <item>CPU</item>
+        <item>GPU</item>
+        <item>NNAPI</item>
+    </string-array>
+
+    <string name="pendeteksian">
+        \tuntuk mendeteksi suatu gambar sesuaikan objek dengan frame pada aplikasi, pada suatu kasus aplikasi membutuhkan orientasi landscape jika objek tidak dapat termuat dalam orientasi portrait. Berikut contoh pendeteksian suatu gambar.
+    </string>
+    
+    <string name="pencarian_pendeteksian">
+        \tHalaman pendeteksian akan menampilkan 3 model dengan nilai confidence tertinggi, utuk melakukan pencarian dapat dilakukan dengan cara menyentuh nama dari model yang memiliki nilai tertinggi yang kemudian aplikasi akan mengarahkan pencarian pada Google sesuai dengan nama model yang ditekan tersebut.
+    </string>
+
+    <string name="pencarian_pendeteksian1">
+        \tdalam fitur ini dapat memilih beberapa bahasa untuk mencari suatu data di Google search, yaitu bahasa Indonesia, Inggris dan juga bahasa Latin(ilmiah).
+    </string>
+
+    <string name="pencarian_pendeteksian2">
+        \tberikut merupakan contoh pendeteksian menggunakan bahasa selain bahasa Indonesia. sebelumnya, pendeteksian menampilkan hasil pencarian menggunakan bahasa Indonesia sekarang telah berganti bahasa Inggris.
+    </string>
+
+    
+    <string name="model_pendeteksian">
+        \tMemilih model dataset dapat dilakukan dengan menggeser tab pendeteksian ke atas dan beberapa menu setting terbuka. Untuk memilih model dapat menekan tombol jenis dan akan terlihat beberapa model pendeteksian gambar.
+    </string>
+
+
+    <string name="AboutMachine">
+        \tDalam menu tersebut terdapat 3 menu yang berisi informasi tentang machine learning mulai dari pengertian, sejarah dan penerapan machine learning yang masing-masing informasi dapat diakses dengan menekan salah satu menu yang ingin diakses.
+    </string>
+
+    <string name="AboutMe">
+        \tDalam menu me terdapat beberapa informasi tentang pembuat aplikasi pendeteksi gambar seperti nama, email, kota asal dll.
+    </string>
+
+    <string name="contact">
+        \tMenu yang dapat digunakan untuk mengirimkan kritik dan saran dengan diarahkan lansung pada email pembuat aplikasi. Menu ini membutuhkan aplikasi Gmail, jika tidak terinstall aplikasi tersebut maka aplikasi akan mengirimkan galat aplikasi tidak terinstall.
+    </string>
+
+    <string name="catatan">
+        \t Pada pendeteksian suatu gambar, aplikasi ini sangat bergantung dengan pencahayaan pada suatu objek deteksi. semakin bagus pencahayaan pada objek maka nilai akan lebih akurat dalam mendeteksi suatu gambar. Disarankan saat menggunakan aplikasi ini ditempat dengan pencahayaan yang memadai.
+    </string>
+
+    <string name="pengertian">
+        \t<b>Machine learning</b> adalah sebuah cabang dari disiplin AI (Artificial intelligence), dimana program atau algoritma tersebut dapat mempelajari dan memiliki kemampuan untuk memprediksi melalui sampel atau data dan mesin akan secara sendirinya mempelajari dari data-data tersebut. Machine learning bukanlah model kerja dari Artificial intelligence yang pada umumnya lebih luas contohnya dapat berpikir seperti otak manusia secara mandiri. \n\tBeberapa contoh penggunaan Machine learning pada kehidupan sehari-hari yang dapat ditemukan pada beberapa industri diantaranya adalah: \n\n<b>1. Bidang Kedokteran</b>
+    </string>
+    <string name="pengertian1">
+         \n\t Salah satu penerapan Machine Learning pada bidang kedokteran contohnya dalam pendeteksian suatu penyakit yang diderita oleh seseorang melalui gejala yang dilihat dan dirasakan. Salah satunya adalah penggunaan alat Elektrokardiogram. \n\n<b>2. Bidang Computer Vision</b>
+    </string>
+    <string name="pengertian2">
+        \n\t Computer Vision merupakan suatu proses komputer atau mesin dapat melihat seperti layaknya manusia. Dalam hal ini mempelajari bagaimana cara komputer mendapatkan informasi dari suatu gambar tertentu untuk menyelesaikan suatu tugas. \n\n<b>3. Bidang Information Retrival</b>
+    </string>
+    <string name="pengertian3">
+         \n\t Dalam bidang ini, machine learning bisa diterapkan dalam banyak hal. Salah satunya adalah penerjemahan bahasa pada komputer. Selain itu juga dapat diterapkan dalam proses mengubah suara menjadi teks serta sistem filter spam di email.
+    </string>
+    <string name="sejarah">
+        \tSejak diciptakannya suatu komputer untuk pertama kalinya manusia sudah memikikan bagaimana komputer dapat mempelajari suatu hal yang didapat melalui pengalaman selama komputer itu beroprasi. Hal tersebut tercermin pada tahun 1952 telah diciptakan suatu sistem game of checkers oleh Arthur Samuel. Sistem tersebut dapat belajar dari pengalaman untuk memenangkan permainan tersebut dan dapat menyimpan setiap gerakan pada memorinya. \n\tSalah satu sejarah yang penerapan Machine Learning yang paling terkenal adalah saat komputer IBM yang bernama Deep Blue secara mengejutkan dapat mengalahkan seorang pemain catur GM Garry Kasparov. Pemain catur yang bergelar GM tersebut melakukan permainan catur pertamanya dengan Deep Blue pada tahun 1996, dimana dalam 6 babak pertandingan Deep Blue memenangkan 1 pertandingan. Setelah kekalahan tersebut tim yang mengembangkan Deep Blue dengan menggandakan kecepatan dan menambah kecepatannya. pada tahun 1997 dilakukan sebuah <i>rematch</i> yang dilakukan selama 6 babak. Secara mengejutkan dan pertama kalinya komputer dapat mengalahkan pemain catur profesional dengan detail hasil pertadingan sebagai berikut:\n
+        \n- Babak 1: Dimenangkan Kasparov
+        \n- Babak 2: Dimenangkan Deep Blue
+        \n- Babak 3: Draw
+        \n- Babak 4: Draw
+        \n- Babak 5: Draw
+        \n- Babak 6: Dimenangkan Deep Blue
+        
+
+
+    </string>
+
+    <string name="implemntasi">
+        \tSalah satu pengimplementasian atau penerapan machine learning adalah menggunakan tools dari Google yang bernama Teachable Machine. Tools tersebut dapat diakses melalui <a href="https://teachablemachine.withgoogle.com/">teachablemachine.withgoogle.com</a> menggunakan Web browser yang terinstall pada PC. Berikut merupakan tampilan awal Teachable Machine :
+    </string>
+    <string name="implementasi1">Klik "Get Started" untuk melanjutkan membuat machine learning. Setelah mengklik akan masuk pada halaman seperti dibawah ini:</string>
+    <string name="implementasi2">Terdapat 3 pilihan dalah halaman tersebut, mulai dari Image Project, Audio Project dan Pose Project. Pada penerapan kali ini pilih Image Project untuk membuat pengklasifikasian gambar</string>
+    <string name="implementasi3">Selanjutkan adalah proses pengumpulan sampel gambar setiap jenis hewan maupun tumbuhan. Pada pengumpulan gambar tersebut dapat diinputkan melalui webcam maupun diambil langsung dari pengimpanan pada PC. Pada tab tersebut terdapat icon pensil yang digunakan untuk mengganti nama setiap class.</string>
+    <string name="implementasi5">Model Machine learning yang telah dibuat sudah dapat di export dan siap diimplementasikan kedalam aplikasi yang dibutuhkan.</string>
+</resources>

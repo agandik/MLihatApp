@@ -1,0 +1,15 @@
+org/mlihat/app/tflite/ClassifierFloatMobileNet.java
+ org.mlihat.app.tflite.ClassifierFloatMobileNet
+org/mlihat/app/tflite/ClassifierFloatEfficientNet.java
+ org.mlihat.app.tflite.ClassifierFloatEfficientNet
+org/mlihat/app/tflite/ClassifierQuantizedEfficientNet.java
+ org.mlihat.app.tflite.ClassifierQuantizedEfficientNet
+org/mlihat/app/tflite/ClassifierQuantizedMobileNet.java
+ org.mlihat.app.tflite.ClassifierQuantizedMobileNet
+org/mlihat/app/tflite/BuildConfig.java
+ org.mlihat.app.tflite.BuildConfig
+org/mlihat/app/tflite/Classifier.java
+ org.mlihat.app.tflite.Classifier
+ org.mlihat.app.tflite.Classifier$Device
+ org.mlihat.app.tflite.Classifier$Model
+ org.mlihat.app.tflite.Classifier$Recognition

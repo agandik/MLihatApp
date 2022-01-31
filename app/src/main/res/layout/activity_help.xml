@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        app:lottie_rawRes="@raw/presentation"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BANTUAN"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mendeteksi_objek"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1. Mendeteksi Objek"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:gravity="left"
+                            android:layout_gravity="left"
+                            android:textColor="#A900BCD4"
+                            />
+
+                        <TextView
+                            android:id="@+id/pencarian_objek"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2. Fitur Pencarian"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:gravity="left"
+                            android:layout_gravity="left"
+                            android:textColor="#A900BCD4"
+                            />
+
+                        <TextView
+                            android:id="@+id/model_objek"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3. Merubah Model Dataset"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:gravity="left"
+                            android:layout_gravity="left"
+                            android:textColor="#A900BCD4"
+                            />
+
+                        <TextView
+                            android:id="@+id/aboutMachine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4. Tentang Machine Learning"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:gravity="left"
+                            android:layout_gravity="left"
+                            android:textColor="#A900BCD4"
+                            />
+
+                        <TextView
+                            android:id="@+id/aboutMe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5. Profil"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:gravity="left"
+                            android:layout_gravity="left"
+                            android:textColor="#A900BCD4"
+                            />
+
+                        <TextView
+                            android:id="@+id/contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7. Kontak"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:gravity="left"
+                            android:layout_gravity="left"
+                            android:textColor="#A900BCD4"
+                            />
+                        <TextView
+                            android:id="@+id/catatan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8. Catatan"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:gravity="left"
+                            android:layout_gravity="left"
+                            android:textColor="#A900BCD4"
+                            />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/cardview_dark_background"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/scrl_mendeteksi_objek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MENDETEKSI OBJEK"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pendeteksian"
+                        android:textSize="15sp"
+                        android:padding="20dp"
+                        android:singleLine="false"
+                        android:justificationMode="inter_word"
+                        />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="500dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/anjing"/>
+
+                    <TextView
+                        android:id="@+id/scrl_pencarian_objek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FITUR PENCARIAN"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pencarian_pendeteksian"
+                        android:textSize="15sp"
+                        android:padding="20dp"
+                        android:singleLine="false"
+                        android:justificationMode="inter_word"
+                        />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="500dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/pencarian"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pencarian_pendeteksian1"
+                        android:textSize="15sp"
+                        android:padding="20dp"
+                        android:singleLine="false"
+                        android:justificationMode="inter_word"
+                        />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/bahasa"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pencarian_pendeteksian2"
+                        android:textSize="15sp"
+                        android:padding="20dp"
+                        android:singleLine="false"
+                        android:justificationMode="inter_word"
+                        />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="500dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/pencarianinggirs"/>
+
+                    <TextView
+                        android:id="@+id/scrl_model_objek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MENGUBAH MODEL DATASET"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/model_pendeteksian"
+                        android:textSize="15sp"
+                        android:padding="20dp"
+                        android:singleLine="false"
+                        android:justificationMode="inter_word"
+                        />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="400dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/model"/>
+
+                    <TextView
+                        android:id="@+id/scrl_aboutMachine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TENTANG MACHINE LEARNING"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/AboutMachine"
+                        android:textSize="15sp"
+                        android:padding="20dp"
+                        android:singleLine="false"
+                        android:justificationMode="inter_word"
+                        />
+
+                    <TextView
+                        android:id="@+id/scrl_aboutMe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PROFIL"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/AboutMe"
+                        android:textSize="15sp"
+                        android:padding="20dp"
+                        android:singleLine="false"
+                        android:justificationMode="inter_word"
+                        />
+
+                    <TextView
+                        android:id="@+id/scrl_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="KONTAK"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact"
+                        android:textSize="15sp"
+                        android:padding="20dp"
+                        android:singleLine="false"
+                        android:justificationMode="inter_word"
+                        />
+
+                    <TextView
+                        android:id="@+id/scrl_catatan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CATATAN"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/catatan"
+                        android:textSize="15sp"
+                        android:padding="20dp"
+                        android:singleLine="false"
+                        android:justificationMode="inter_word"
+                        />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+</RelativeLayout>

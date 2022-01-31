@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutMachineActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/machinetop"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lottie_rawRes="@raw/machine"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                />
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/machinecard"
+            android:layout_below="@+id/machinetop"
+            android:layout_width="400dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-50dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:id="@+id/pengertian"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pengertian"
+                        android:textSize="20sp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/sejarah"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sejarah"
+                        android:textSize="20sp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/penerapan"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Penerapan"
+                        android:textSize="20sp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_below="@+id/machinecard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:id="@+id/textpengertian"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            app:lottie_rawRes="@raw/questioning"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:text="APA ITU MACHINE LEARNING?"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:singleLine="false"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/pengertian"
+                            android:padding="35sp"
+                            android:layout_marginBottom="-30dp"
+                            android:textSize="15sp"
+                            android:singleLine="false"
+                            android:justificationMode="inter_word"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_doctors"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/pengertian1"
+                            android:padding="35sp"
+                            android:layout_marginBottom="-30dp"
+                            android:textSize="15sp"
+                            android:singleLine="false"
+                            android:justificationMode="inter_word"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_facerecognition"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/pengertian2"
+                            android:padding="35sp"
+                            android:layout_marginBottom="-30dp"
+                            android:textSize="15sp"
+                            android:singleLine="false"
+                            android:justificationMode="inter_word"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_translate"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/pengertian3"
+                            android:padding="35sp"
+                            android:layout_marginBottom="-30dp"
+                            android:textSize="15sp"
+                            android:singleLine="false"
+                            android:justificationMode="inter_word"/>
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+                <ScrollView
+                    android:id="@+id/textsejarah"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            app:lottie_rawRes="@raw/time"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:text="SEJARAH MACHINE LEARNING"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:singleLine="false"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/sejarah"
+                            android:padding="35sp"
+                            android:textSize="15sp"
+                            android:singleLine="false"
+                            android:justificationMode="inter_word"/>
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+               <ScrollView
+                    android:id="@+id/textpenerapan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical"
+                       android:gravity="center">
+
+                       <com.airbnb.lottie.LottieAnimationView
+                           android:layout_width="200dp"
+                           android:layout_height="200dp"
+                           app:lottie_rawRes="@raw/build"
+                           app:lottie_autoPlay="true"
+                           app:lottie_loop="true"
+                           />
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:gravity="center"
+                           android:layout_marginLeft="20dp"
+                           android:layout_marginRight="20dp"
+                           android:text="CARA PENERAPAN MACHINE LEARNING"
+                           android:textStyle="bold"
+                           android:textSize="20sp"
+                           android:singleLine="false"/>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:text="@string/implemntasi"
+                           android:padding="35sp"
+                           android:textSize="15sp"
+                           android:singleLine="false"
+                           android:autoLink="web"
+                           android:justificationMode="inter_word"
+                           android:layout_marginBottom="-30sp"/>
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="200dp"
+                           android:layout_marginLeft="20dp"
+                           android:layout_marginRight="20dp"
+                           android:src="@drawable/screenshota"
+                           />
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:text="@string/implementasi1"
+                           android:padding="35sp"
+                           android:textSize="15sp"
+                           android:singleLine="false"
+                           android:justificationMode="inter_word"
+                           android:layout_marginBottom="-30sp"/>
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="200dp"
+                           android:layout_marginLeft="20dp"
+                           android:layout_marginRight="20dp"
+                           android:src="@drawable/screenshotb"
+                           />
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:text="@string/implementasi2"
+                           android:padding="35sp"
+                           android:textSize="15sp"
+                           android:singleLine="false"
+                           android:justificationMode="inter_word"
+                           android:layout_marginBottom="-30sp"/>
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="200dp"
+                           android:layout_marginLeft="20dp"
+                           android:layout_marginRight="20dp"
+                           android:src="@drawable/screenshotc"
+                           />
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:text="@string/implementasi3"
+                           android:padding="35sp"
+                           android:textSize="15sp"
+                           android:singleLine="false"
+                           android:justificationMode="inter_word"
+                           android:layout_marginBottom="-30sp"/>
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="200dp"
+                           android:layout_marginLeft="20dp"
+                           android:layout_marginRight="20dp"
+                           android:src="@drawable/screenshotd"
+                           />
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="200dp"
+                           android:layout_marginLeft="20dp"
+                           android:layout_marginRight="20dp"
+                           android:src="@drawable/screenshote"
+                           />
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:text="@string/implementasi5"
+                           android:padding="35sp"
+                           android:textSize="15sp"
+                           android:singleLine="false"
+                           android:justificationMode="inter_word"
+                           android:layout_marginBottom="-30sp"/>
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="200dp"
+                           android:layout_marginLeft="20dp"
+                           android:layout_marginRight="20dp"
+                           android:layout_marginBottom="20dp"
+                           android:adjustViewBounds="true"
+                           android:src="@drawable/screenshotf"
+                           />
+
+                   </LinearLayout>
+
+                </ScrollView>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
